@@ -1,6 +1,6 @@
 {
     "layer": "top",
-        "output":"eDP-1",
+        "output":"HDMI-A-1",
     "position": "top",
     "mod": "dock",
     "exclusive": true,
@@ -17,7 +17,6 @@
     "modules-right": [
         "pulseaudio",
         "pulseaudio#microphone",
-        "battery",
         "tray",
         "clock"
     ],
