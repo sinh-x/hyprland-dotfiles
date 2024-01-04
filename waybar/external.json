@@ -38,7 +38,8 @@
         "on-scroll-down": "hyprctl dispatch workspace r+1",
     },
     "clock": {
-        "format": "{: %H:%M   %d/%m}",
+        "timezone": "Asia/Ho_chi_minh",
+        "format": "   {:%R     %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 }
