@@ -15,6 +15,7 @@
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
+        "temperature",
         "pulseaudio",
         "pulseaudio#microphone",
         "battery",
@@ -108,5 +109,10 @@
     "custom/network_traffic": {
         "exec": "~/.config/waybar/scripts/network-traffic.sh wlan0",
         "return-type": "json",
+    },
+    "temperature": {
+        "hwon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
+        "critical-threshold": 80,
+        "format" : "{temperatureC}"
     }
 }
