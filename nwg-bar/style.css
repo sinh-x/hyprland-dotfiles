@@ -1,35 +1,42 @@
 window {
-        background-color: rgba (0, 0, 0, 1.0)
+    background-color: rgba (0, 0, 0, 0.50);
+    color: #1d1f21 
 }
 
-/* Outer bar container, takes all the window width/height */
-#outer-box {
-	margin: 0px
-}
-
-/* Inner bar container, surrounds buttons */
-#inner-box {
-	background-color: rgba (0, 0, 0, 0.85);
-	border-radius: 10px;
-	border-style: none;
-	border-width: 1px;
-	border-color: rgba (156, 142, 122, 0.7);
-	padding: 5px;
-	margin: 5px
+/* search entry */
+entry {
+    box-shadow: 0 0 6px 5px #2e3440;
+    background-color: rgba (0, 0, 0, 0.2)
 }
 
 button, image {
-	background: none;
-	border: none;
-	box-shadow: none
-}
+    background-color: #FF2222;
+    background: none;
+    border: none;
+    margin: 4px;
 
-button {
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 5px
 }
 
 button:hover {
-	background-color: rgba (255, 255, 255, 0.1)
+    background-color: rgba (255, 0, 0, 0.2)
+}
+
+button:focus {
+    background-color: rgba (225, 0, 0, 0.3);
+}
+
+/* in case you wanted to give category buttons a different look */
+#category-button {
+    margin: 0 10px 0 10px
+}
+
+#pinned-box {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted gray
+}
+
+#files-box {
+    padding: 5px;
+    border: 1px dotted gray;
+    border-radius: 15px
 }
