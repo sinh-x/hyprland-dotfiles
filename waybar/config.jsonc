@@ -1,6 +1,6 @@
 {
     "layer": "top",
-        "output":"DP-1",
+        "output":"eDP-1",
     "position": "top",
     "mod": "dock",
     "exclusive": true,
@@ -19,6 +19,7 @@
         "pulseaudio",
         "pulseaudio#microphone",
         "tray",
+        "battery",
         "clock"
     ],
 
@@ -73,7 +74,7 @@
         "format": "{format_source}",
         "format-source": " {volume}%",
         "format-source-muted": " Muted",
-        "on-click": "~/.config/bspwm/scripts/bspvolume --toggle-mic",
+        "on-click": "~/.1config/bspwm/scripts/bspvolume --toggle-mic",
     },
     "battery": {
         "states": {

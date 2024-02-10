@@ -1,1 +1,1 @@
-hyprctl clients | rg ^Window | wofi --dmenu | awk '{print $2}' | xargs -I{} hyprctl dispatcher focuswindow "address:0x{}"
+hyprctl clients | rg ^Window | rg -v '> :' | wofi -c /home/sinh/.config/wofi/dmenu-config -I -a --dmenu | awk '{print $2}' | xargs -I{} hyprctl dispatcher focuswindow
